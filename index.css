@@ -211,6 +211,7 @@ footer nav a {
 
 .text-primary {
     color: var(--color-primary);
+    text-decoration: none;
 }
 
 .text-center {
