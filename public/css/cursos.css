@@ -172,6 +172,21 @@ header nav a:nth-child(2n-1) {/* Pegando todos os elementos pares e alinhando À
     text-transform: uppercase;
 }
 
+.button:hover {
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 0 var(--color-black);
+    color: var(--color-black);
+    display: block;
+    font-size: 1.25rem;
+    padding: .75rem 1rem;
+    max-width: 14rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 400ms all;
+}
+
 .button-carrossel{
     border: 2px solid var(--color-black);
     color: var(--color-black);
