@@ -32,6 +32,7 @@ footer {
     padding: 1.25rem;
 }
 
+
 header img {
     display: block;
     margin: 1rem auto;
@@ -250,6 +251,34 @@ article {
     max-width: 1280px;
 } */
 
+/*------------carrossel--------------------------------------------------*/
+.arrow-right:hover,
+.arrow-left:hover {
+    opacity: 1;
+}
+
+.item {
+    opacity: 0.5;
+    transition: all 600ms ease-in-out;
+}
+
+.current-item {
+    opacity: 1;
+}
+
+/*//////////////////////////Esconder a scrollbar///////////////////////////*/
+.carrossel-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.carrossel-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+/*/////////////////////////////////////////////////////////////////////////*/
+
+
+
 .slider {
     width: 85%;
     max-width: 1280px;
@@ -344,7 +373,7 @@ article {
     gap: 1rem;
     align-content: center;
     align-items: center;
-    pointer-events: none;
+    /*pointer-events: none; ////////// Não faz sentido ter esse comando porque ele está impedindo os botões de funcionarem*/
 }
 
 @media (min-width: 460px) {
@@ -394,7 +423,7 @@ article {
     flex: 0 0 calc(33.33% - 1rem); /* Para mostrar 3 itens de cada vez */
     min-width: calc(33.33% - 1rem);
 }
-
+/*---------------------------------------------------------------------------*/
 
 /* Rodapé */
 
